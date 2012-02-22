@@ -1,4 +1,8 @@
 #!/bin/sh
+#VNC Port clear
+echo "Start to clear the useless port"
+
+echo "1. Find the working port:"
 var=$(find . -name "\.X[0-9]*-lock" | awk -F- '{print $1}'| awk -F. '{print $3}')
 
 
